@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    scroll-behavior: smooth;
+}
+
+nav {
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: rgb(31, 31, 31);
+    z-index: 1000;
+    margin-bottom: 60px;
+}
+
+.nav-logo {
+    max-width: 70px;
+    margin-left: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.2s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 100px;
+}
+
+.btn:hover {
+    background-color: #315dd4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 6rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 100px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content h2 {
+    color: lightgray;
+    margin-bottom: 0.4rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+header .content p {
+    color: #ccc;
+}
+
+header .image img {
+
+    max-width: 600px;
+    margin: 15px;
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features h4 {
+    background-color: #315dd4; /* Lighter blue */
+    background-image: url("path/to/subtle_texture.png"); /* Optional subtle texture */
+    background-size: cover; /* Texture covers the entire element */
+    border-radius: 10%; /* Slightly rounded corners */
+    padding: 10px;
+    text-align: center;
+    color: #000; /* Black text for good contrast */
+    transition: transform 0.2s, font-size 0.2s;
+  }
+
+  .features h4:hover {
+    background-color: #718edb;
+    transform: 100%;
+    font-size: 1.2em; /* Opcional: aumenta o tamanho da fonte */
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_andsymbol {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    background-color: #315dd4; /* Cor do fundo */
+    border-radius: 10px;
+    padding: 15px; /* Espaço interno para o fundo */
+    margin-bottom: 30px;                                     
+}
+
+.exp_descricao {
+    display: flex;
+    color: aliceblue;
+    gap: 40px; /* Espaço entre os itens */
+
+}
+
+.experiencia h3{
+    color: #fff;
+}
+
+
+.social_btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.container_contato {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 7rem;
+
+}
+
+.social_btn a:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+}
+
+.exp_descricao .inner-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as divs */
+}
+
+.inner-item {
+    flex: 1; /* Permite que cada item ocupe o mesmo espaço */
+}
+
+.container p {
+    color: #000;
+}
+
+.container h4 {
+    color: #000;
+}
+
+.container_idiomas {
+    max-width: 300px;
+    margin: auto;
+    padding: 0px 7rem;
+
+}
