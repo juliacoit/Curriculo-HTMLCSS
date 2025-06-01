@@ -12,7 +12,7 @@
     <nav>
         <div class="nav-logo">
             <a href="#"></a>
-            <img src="images/logo.png">
+            <img src="images/logo.jpg">
         </div>
 
         <ul class="nav-links">
@@ -20,6 +20,7 @@
             <li class="link"><a href="#habilidades">Habilidades</a></li>
             <li class="link"><a href="#experiencia">Experiência</a></li>
             <li class="link"><a href="#formacaoacademica">Formação Acadêmica</a></li>
+            <li class="link"><a href="#" onclick="carregarPagina('projetos.html'); return false;">Projetos</a></li>
         </ul>
         <button class="btn" onclick="scrollToSection('contato')">Contato!</button>
 
@@ -30,23 +31,21 @@
             <span class="blur"></span>
             <span class="blur"></span>
             <h1>Olá, me chamo <span>Júlia</span>!</h1>
-            <h2>Web Developer, Técnico em Informática e entusiasta em I.A.</h2>
+            <h2>Ciência da Computação, Técnico em Informática e entusiasta em I.A.</h2>
             <p>
-                Já trabalhei dando aulas de inglês por 7 meses,
-                possuo uma grande habilidade com a língua e desejo
-                trabalhar pra fora do país. Possuo conhecimentos em HTML
-                e CSS, assim como Javascript. Estou concluindo o ensino Técnico em Informática
-                no IFBA, e desejo ingressar na faculdade de Ciência da Computação (ou qualquer curso da área).
-                Um dos principais assuntos que me interessa é Inteligencia Artificial e ML. <br>
+                Já trabalhei dando aulas de inglês,
+                possuo uma grande habilidade com o idioma e desejo
+                trabalhar pra fora do país. Possuo conhecimentos em Desenvolvimento Web, especialmente em Javascript e Python. Fiz meu ensino médio integrado
+                em Informática no IFBA e estou cursando o Bacharelado em Ciência da Computação na UFG. Busco me aprofundar na área de Engenharia de IA.
+            </p>
                 <h2>Objetivos</h2>
                 <p>
                 Meus objetivos profissionais são aprimorar minhas habilidades práticas na área da
 tecnologia, por meio de um estágio que me proporcione uma experiência abrangente e
-diversificada. Busco oportunidades de aprendizado que me permitam explorar diferentes
-aspectos, desde gerenciamento de projetos até soluções de problemas.
+diversificada. Busco oportunidades de aprendizado que me permitam explorar o desenvolvimento web que envolva a integração de modelos de Inteligência Artificial.
             </p>
             <p>
-                Barreiras/BA, 18 anos
+                Barreiras/BA, 19 anos
             </p>
         </div>
         <div class="image">
@@ -56,7 +55,7 @@ aspectos, desde gerenciamento de projetos até soluções de problemas.
     </header>
 
     <div class="subcontent">
-        <div class="container_contato">
+        <div class="container_redes">
             <div class="social_btn">
                 <a href="https://www.linkedin.com/in/julhasc/" class="linkedin" target="_blank">
                     <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"/></svg>
@@ -90,18 +89,19 @@ aspectos, desde gerenciamento de projetos até soluções de problemas.
 
     <section id="habilidades" class="container">
         <div class="header_andsymbol">
-            <h2 class="header">Minhas Hard Skills</h2>
+            <h2 class="header">Hard Skills</h2>
             <span><i class="ri-verified-badge-line"></i></span>
         </div>
         <div class="features">
             <h4>Inglês Avançado</h4>
             <h4>HTML e CSS</h4>
-            <h4>React e Javascript</h4>
-            <h4>Técnico em Informática</h4>
-            <h4>Mátemática e Lógica</h4>
+            <h4>Javascript e Python</h4>
+            <h4>Banco de Dados</h4>
+            <h4>Inteligência Artificial</h4>
+            <h4>Manutenção de Computadores</h4>
         </div>
         <div class="header_andsymbol">
-            <h2 class="header">Minhas Soft Skills</h2>
+            <h2 class="header">Soft Skills</h2>
             <span><i class="ri-verified-badge-line"></i></span>
         </div>
         <div class="features">
@@ -144,7 +144,7 @@ aspectos, desde gerenciamento de projetos até soluções de problemas.
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
@@ -162,13 +162,19 @@ aspectos, desde gerenciamento de projetos até soluções de problemas.
     <div class="experiencia">
         <h3 class="exp_title">Ensino Médio</h3>
         <div class="exp_descricao highlight">
-            <h4>IFBA | 03/2023 - 03/2025 (Previsão)</h4>
+            <h4>IFBA | 03/2023 - 03/2025</h4>
         </div>
     </div>
     <div class="experiencia">
         <h3 class="exp_title">Técnico em Informática</h3>
         <div class="exp_descricao highlight">
-            <h4>IFBA | 03/2023 - 03/2025 (Previsão)</h4>
+            <h4>IFBA | 03/2023 - 03/2025</h4>
+        </div>
+    </div>
+    <div class="experiencia">
+        <h3 class="exp_title">Bacharelado em Ciência da Computação</h3>
+        <div class="exp_descricao highlight">
+            <h4>UFG | 09/2025 - 2030</h4>
         </div>
     </div>
 </section>

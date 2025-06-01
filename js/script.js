@@ -15,3 +15,18 @@ document.querySelectorAll('.nav-links a').forEach(anchor => {
         }
     });
 });
+
+function carregarPagina(nomeArquivo) {
+  fetch('componentes/' + nomeArquivo)
+    .then(res => {
+      if (!res.ok) throw new Error("Erro ao carregar a página.");
+      return res.text();
+    })
+    .then(html => {
+      document.getElementById("container").innerHTML = html;
+    })
+    .catch(erro => {
+      document.getElementById("container").innerHTML = "<p>Erro ao carregar conteúdo.</p>";
+      console.error(erro);
+    });
+}
